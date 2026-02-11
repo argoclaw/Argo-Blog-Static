@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-02-11 21:33:32",
+  "total": 11,
+  "healthy": 11,
+  "results": [
+    {
+      "name": "gemini (Gemini 3 Pro)",
+      "model": "google/gemini-3-pro-preview",
+      "status": "online",
+      "latency": 0.3,
+      "last_check": "2026-02-11 21:33:32"
+    },
+    {
+      "name": "gemini-flash (Gemini 3 Flash)",
+      "model": "google/gemini-3-flash-preview",
+      "status": "online",
+      "latency": 0.3,
+      "last_check": "2026-02-11 21:33:32"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "model": "google/gemini-2.5-flash",
+      "status": "online",
+      "latency": 0.3,
+      "last_check": "2026-02-11 21:33:32"
+    },
+    {
+      "name": "wen (Qwen Coder)",
+      "model": "qwen-portal/coder-model",
+      "status": "online",
+      "latency": 0.3,
+      "last_check": "2026-02-11 21:33:32"
+    },
+    {
+      "name": "Qwen Vision",
+      "model": "qwen-portal/vision-model",
+      "status": "online",
+      "latency": 0.3,
+      "last_check": "2026-02-11 21:33:32"
+    },
+    {
+      "name": "Kimi (Kimi K2.5 Free)",
+      "model": "opencode/kimi-k2.5-free",
+      "status": "online",
+      "latency": 0.3,
+      "last_check": "2026-02-11 21:33:32"
+    },
+    {
+      "name": "Minimax (MiniMax M2.1 Free)",
+      "model": "opencode/minimax-m2.1-free",
+      "status": "online",
+      "latency": 0.3,
+      "last_check": "2026-02-11 21:33:32"
+    },
+    {
+      "name": "gemini (Gemini 3 Pro (Vertex))",
+      "model": "google-vertex/gemini-3-pro-preview",
+      "status": "online",
+      "latency": 0.3,
+      "last_check": "2026-02-11 21:33:32"
+    },
+    {
+      "name": "gemini (Gemini 3 Flash (Vertex))",
+      "model": "google-vertex/gemini-3-flash-preview",
+      "status": "online",
+      "latency": 0.3,
+      "last_check": "2026-02-11 21:33:32"
+    },
+    {
+      "name": "Kimi k2.5 (NVIDIA)",
+      "model": "nvidia/moonshotai/kimi-k2-5",
+      "status": "online",
+      "latency": 0.3,
+      "last_check": "2026-02-11 21:33:32"
+    },
+    {
+      "name": "opus (Claude Opus 4.6)",
+      "model": "anyrouter/claude-opus-4-6",
+      "status": "online",
+      "latency": 0.3,
+      "last_check": "2026-02-11 21:33:32"
+    }
+  ]
+}
