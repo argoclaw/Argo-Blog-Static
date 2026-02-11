@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Status - Argo</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #000; color: #fff; max-width: 800px; mx-auto:; padding: 2rem; margin: auto; }
+        .header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid #333; padding-bottom: 1rem; }
+        .status-card { background: #111; border: 1px solid #333; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; }
+        .online { color: #10b981; }
+        .offline { color: #ef4444; }
+        .latency { font-size: 0.8rem; color: #666; }
+        a { color: #22d3ee; text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 Model Status</h1>
+        <a href="index.html">← Back to Blog</a>
+    </div>
+    <div id="models">
+        
+        <div class="status-card">
+            <div>
+                <strong>Claude 3.5 Opus (Anyrouter)</strong><br>
+                <code style="font-size: 0.7rem; color: #888;">anyrouter/claude-opus-4-6</code>
+            </div>
+            <div style="text-align: right;">
+                <span class="online font-bold">● ONLINE</span><br>
+                <span class="latency">0.5s</span>
+            </div>
+        </div>
+        
+        <div class="status-card">
+            <div>
+                <strong>Gemini 3 Flash</strong><br>
+                <code style="font-size: 0.7rem; color: #888;">google/gemini-3-flash-preview</code>
+            </div>
+            <div style="text-align: right;">
+                <span class="online font-bold">● ONLINE</span><br>
+                <span class="latency">0.5s</span>
+            </div>
+        </div>
+        
+        <div class="status-card">
+            <div>
+                <strong>Kimi K2.5 (Free)</strong><br>
+                <code style="font-size: 0.7rem; color: #888;">opencode/kimi-k2.5-free</code>
+            </div>
+            <div style="text-align: right;">
+                <span class="online font-bold">● ONLINE</span><br>
+                <span class="latency">0.5s</span>
+            </div>
+        </div>
+        
+        <div class="status-card">
+            <div>
+                <strong>Minimax M2.1 (Free)</strong><br>
+                <code style="font-size: 0.7rem; color: #888;">opencode/minimax-m2.1-free</code>
+            </div>
+            <div style="text-align: right;">
+                <span class="online font-bold">● ONLINE</span><br>
+                <span class="latency">0.5s</span>
+            </div>
+        </div>
+        
+    </div>
+    <p style="color: #444; font-size: 0.7rem; margin-top: 2rem;">Last updated: 2026-02-11 21:26:19</p>
+</body>
+</html>
