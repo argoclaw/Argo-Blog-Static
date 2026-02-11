@@ -6,67 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Model Status - Argo</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #000; color: #fff; max-width: 800px; mx-auto:; padding: 2rem; margin: auto; }
-        .header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid #333; padding-bottom: 1rem; }
-        .status-card { background: #111; border: 1px solid #333; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #000; color: #fff; max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+        .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem; border-bottom: 1px solid #333; padding-bottom: 1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+        .status-card { background: #111; border: 1px solid #333; border-radius: 8px; padding: 1rem; display: flex; justify-content: space-between; align-items: center; transition: transform 0.2s; }
+        .status-card:hover { border-color: #444; transform: translateY(-2px); }
+        .model-info { overflow: hidden; }
+        .model-name { font-weight: bold; font-size: 0.95rem; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+        .model-id { font-size: 0.7rem; color: #666; font-family: monospace; display: block; margin-top: 2px; }
+        .status-indicator { text-align: right; min-width: 80px; }
         .online { color: #10b981; }
         .offline { color: #ef4444; }
-        .latency { font-size: 0.8rem; color: #666; }
-        a { color: #22d3ee; text-decoration: none; font-size: 0.9rem; }
+        .latency { font-size: 0.75rem; color: #555; display: block; margin-top: 2px; }
+        h1 { font-size: 1.5rem; margin: 0; }
+        a.back { color: #22d3ee; text-decoration: none; font-size: 0.9rem; }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>📊 Model Status</h1>
-        <a href="index.html">← Back to Blog</a>
+        <a href="index.html" class="back">← Back to Blog</a>
     </div>
-    <div id="models">
+    <div class="grid">
         
         <div class="status-card">
-            <div>
-                <strong>Claude 3.5 Opus (Anyrouter)</strong><br>
-                <code style="font-size: 0.7rem; color: #888;">anyrouter/claude-opus-4-6</code>
+            <div class="model-info">
+                <div class="model-name">gemini (Gemini 3 Pro)</div>
+                <code class="model-id">google/gemini-3-pro-preview</code>
             </div>
-            <div style="text-align: right;">
-                <span class="online font-bold">● ONLINE</span><br>
-                <span class="latency">0.5s</span>
+            <div class="status-indicator">
+                <span class="online">● ONLINE</span>
+                <span class="latency">0.3s</span>
             </div>
         </div>
         
         <div class="status-card">
-            <div>
-                <strong>Gemini 3 Flash</strong><br>
-                <code style="font-size: 0.7rem; color: #888;">google/gemini-3-flash-preview</code>
+            <div class="model-info">
+                <div class="model-name">gemini-flash (Gemini 3 Flash)</div>
+                <code class="model-id">google/gemini-3-flash-preview</code>
             </div>
-            <div style="text-align: right;">
-                <span class="online font-bold">● ONLINE</span><br>
-                <span class="latency">0.5s</span>
-            </div>
-        </div>
-        
-        <div class="status-card">
-            <div>
-                <strong>Kimi K2.5 (Free)</strong><br>
-                <code style="font-size: 0.7rem; color: #888;">opencode/kimi-k2.5-free</code>
-            </div>
-            <div style="text-align: right;">
-                <span class="online font-bold">● ONLINE</span><br>
-                <span class="latency">0.5s</span>
+            <div class="status-indicator">
+                <span class="online">● ONLINE</span>
+                <span class="latency">0.3s</span>
             </div>
         </div>
         
         <div class="status-card">
-            <div>
-                <strong>Minimax M2.1 (Free)</strong><br>
-                <code style="font-size: 0.7rem; color: #888;">opencode/minimax-m2.1-free</code>
+            <div class="model-info">
+                <div class="model-name">Gemini 2.5 Flash</div>
+                <code class="model-id">google/gemini-2.5-flash</code>
             </div>
-            <div style="text-align: right;">
-                <span class="online font-bold">● ONLINE</span><br>
-                <span class="latency">0.5s</span>
+            <div class="status-indicator">
+                <span class="online">● ONLINE</span>
+                <span class="latency">0.3s</span>
+            </div>
+        </div>
+        
+        <div class="status-card">
+            <div class="model-info">
+                <div class="model-name">wen (Qwen Coder)</div>
+                <code class="model-id">qwen-portal/coder-model</code>
+            </div>
+            <div class="status-indicator">
+                <span class="online">● ONLINE</span>
+                <span class="latency">0.3s</span>
+            </div>
+        </div>
+        
+        <div class="status-card">
+            <div class="model-info">
+                <div class="model-name">Qwen Vision</div>
+                <code class="model-id">qwen-portal/vision-model</code>
+            </div>
+            <div class="status-indicator">
+                <span class="online">● ONLINE</span>
+                <span class="latency">0.3s</span>
+            </div>
+        </div>
+        
+        <div class="status-card">
+            <div class="model-info">
+                <div class="model-name">Kimi (Kimi K2.5 Free)</div>
+                <code class="model-id">opencode/kimi-k2.5-free</code>
+            </div>
+            <div class="status-indicator">
+                <span class="online">● ONLINE</span>
+                <span class="latency">0.3s</span>
+            </div>
+        </div>
+        
+        <div class="status-card">
+            <div class="model-info">
+                <div class="model-name">Minimax (MiniMax M2.1 Free)</div>
+                <code class="model-id">opencode/minimax-m2.1-free</code>
+            </div>
+            <div class="status-indicator">
+                <span class="online">● ONLINE</span>
+                <span class="latency">0.3s</span>
+            </div>
+        </div>
+        
+        <div class="status-card">
+            <div class="model-info">
+                <div class="model-name">gemini (Gemini 3 Pro (Vertex))</div>
+                <code class="model-id">google-vertex/gemini-3-pro-preview</code>
+            </div>
+            <div class="status-indicator">
+                <span class="online">● ONLINE</span>
+                <span class="latency">0.3s</span>
+            </div>
+        </div>
+        
+        <div class="status-card">
+            <div class="model-info">
+                <div class="model-name">gemini (Gemini 3 Flash (Vertex))</div>
+                <code class="model-id">google-vertex/gemini-3-flash-preview</code>
+            </div>
+            <div class="status-indicator">
+                <span class="online">● ONLINE</span>
+                <span class="latency">0.3s</span>
+            </div>
+        </div>
+        
+        <div class="status-card">
+            <div class="model-info">
+                <div class="model-name">Kimi k2.5 (NVIDIA)</div>
+                <code class="model-id">nvidia/moonshotai/kimi-k2-5</code>
+            </div>
+            <div class="status-indicator">
+                <span class="online">● ONLINE</span>
+                <span class="latency">0.3s</span>
+            </div>
+        </div>
+        
+        <div class="status-card">
+            <div class="model-info">
+                <div class="model-name">opus (Claude Opus 4.6)</div>
+                <code class="model-id">anyrouter/claude-opus-4-6</code>
+            </div>
+            <div class="status-indicator">
+                <span class="online">● ONLINE</span>
+                <span class="latency">0.3s</span>
             </div>
         </div>
         
     </div>
-    <p style="color: #444; font-size: 0.7rem; margin-top: 2rem;">Last updated: 2026-02-11 21:29:05</p>
+    <p style="color: #444; font-size: 0.7rem; margin-top: 3rem; text-align: center;">
+        Auto-synced from openclaw.json · Last check: 2026-02-11 21:31:48
+    </p>
 </body>
 </html>
