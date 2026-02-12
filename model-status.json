@@ -1,87 +1,154 @@
 {
-  "generated_at": "2026-02-12 09:07:19",
+  "generated_at": "2026-02-12 09:09:16",
   "summary": {
-    "total": 11,
-    "passed": 11,
+    "total": 18,
+    "passed": 18,
     "failed": 0
   },
   "results": [
     {
       "provider": "google",
       "model": "google/gemini-3-pro-preview",
+      "alias": "gemini",
       "success": true,
-      "status": "online",
-      "response": "0.35s"
+      "status": "configured",
+      "response": "-"
     },
     {
       "provider": "google",
       "model": "google/gemini-3-flash-preview",
+      "alias": "gemini-flash",
       "success": true,
-      "status": "online",
-      "response": "0.35s"
+      "status": "configured",
+      "response": "-"
     },
     {
       "provider": "google",
       "model": "google/gemini-2.5-flash",
+      "alias": "",
       "success": true,
-      "status": "online",
-      "response": "0.35s"
+      "status": "configured",
+      "response": "-"
     },
     {
       "provider": "qwen-portal",
       "model": "qwen-portal/coder-model",
+      "alias": "wen",
       "success": true,
-      "status": "online",
-      "response": "0.35s"
+      "status": "configured",
+      "response": "-"
     },
     {
       "provider": "qwen-portal",
       "model": "qwen-portal/vision-model",
+      "alias": "",
       "success": true,
-      "status": "online",
-      "response": "0.35s"
+      "status": "configured",
+      "response": "-"
     },
     {
       "provider": "opencode",
       "model": "opencode/kimi-k2.5-free",
+      "alias": "Kimi",
       "success": true,
-      "status": "online",
-      "response": "0.35s"
+      "status": "configured",
+      "response": "-"
     },
     {
       "provider": "opencode",
       "model": "opencode/minimax-m2.1-free",
+      "alias": "Minimax",
       "success": true,
-      "status": "online",
-      "response": "0.35s"
+      "status": "configured",
+      "response": "-"
     },
     {
       "provider": "google-vertex",
       "model": "google-vertex/gemini-3-pro-preview",
+      "alias": "gemini",
       "success": true,
-      "status": "online",
-      "response": "0.35s"
+      "status": "configured",
+      "response": "-"
     },
     {
       "provider": "google-vertex",
       "model": "google-vertex/gemini-3-flash-preview",
+      "alias": "gemini",
       "success": true,
-      "status": "online",
-      "response": "0.35s"
+      "status": "configured",
+      "response": "-"
     },
     {
       "provider": "nvidia",
       "model": "nvidia/moonshotai/kimi-k2-5",
+      "alias": "",
       "success": true,
-      "status": "online",
-      "response": "0.35s"
+      "status": "configured",
+      "response": "-"
     },
     {
       "provider": "anyrouter",
       "model": "anyrouter/claude-opus-4-6",
+      "alias": "opus",
       "success": true,
-      "status": "online",
-      "response": "0.35s"
+      "status": "configured",
+      "response": "-"
+    },
+    {
+      "provider": "google-antigravity",
+      "model": "google-antigravity/gemini-3-flash",
+      "alias": "antigravity-flash",
+      "success": true,
+      "status": "configured",
+      "response": "-"
+    },
+    {
+      "provider": "google-antigravity",
+      "model": "google-antigravity/claude-sonnet-4-5-thinking",
+      "alias": "antigravity-sonnet",
+      "success": true,
+      "status": "configured",
+      "response": "-"
+    },
+    {
+      "provider": "google-antigravity",
+      "model": "google-antigravity/claude-opus-4-5-thinking",
+      "alias": "antigravity-opus",
+      "success": true,
+      "status": "configured",
+      "response": "-"
+    },
+    {
+      "provider": "google-antigravity",
+      "model": "google-antigravity/claude-sonnet-4-5",
+      "alias": "antigravity-sonnet-base",
+      "success": true,
+      "status": "configured",
+      "response": "-"
+    },
+    {
+      "provider": "google-antigravity",
+      "model": "google-antigravity/gemini-3-pro-high",
+      "alias": "antigravity-pro-high",
+      "success": true,
+      "status": "configured",
+      "response": "-"
+    },
+    {
+      "provider": "google-antigravity",
+      "model": "google-antigravity/gemini-3-pro-low",
+      "alias": "antigravity-pro-low",
+      "success": true,
+      "status": "configured",
+      "response": "-"
+    },
+    {
+      "provider": "google-antigravity",
+      "model": "google-antigravity/gpt-oss-120b-medium",
+      "alias": "antigravity-gpt-oss",
+      "success": true,
+      "status": "configured",
+      "response": "-"
     }
   ]
 }
