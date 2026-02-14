@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-14 14:00:14",
+  "generated_at": "2026-02-14 16:00:13",
   "summary": {
     "total": 11,
     "passed": 11,
@@ -47,22 +47,6 @@
       "response": "-"
     },
     {
-      "provider": "opencode",
-      "model": "opencode/kimi-k2.5-free",
-      "alias": "Kimi",
-      "success": true,
-      "status": "configured",
-      "response": "-"
-    },
-    {
-      "provider": "opencode",
-      "model": "opencode/minimax-m2.1-free",
-      "alias": "Minimax",
-      "success": true,
-      "status": "configured",
-      "response": "-"
-    },
-    {
       "provider": "google-vertex",
       "model": "google-vertex/gemini-3-pro-preview",
       "alias": "gemini",
@@ -90,6 +74,22 @@
       "provider": "anyrouter",
       "model": "anyrouter/claude-opus-4-6",
       "alias": "opus",
+      "success": true,
+      "status": "configured",
+      "response": "-"
+    },
+    {
+      "provider": "opencode",
+      "model": "opencode/kimi-k2.5-free",
+      "alias": "",
+      "success": true,
+      "status": "configured",
+      "response": "-"
+    },
+    {
+      "provider": "opencode",
+      "model": "opencode/minimax-m2.5-free",
+      "alias": "",
       "success": true,
       "status": "configured",
       "response": "-"
