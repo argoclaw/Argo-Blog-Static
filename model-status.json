@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-15 16:00:13",
+  "generated_at": "2026-02-15 18:00:29",
   "summary": {
-    "total": 11,
-    "passed": 11,
+    "total": 14,
+    "passed": 14,
     "failed": 0
   },
   "results": [
@@ -25,6 +25,30 @@
     {
       "provider": "google",
       "model": "google/gemini-2.5-flash",
+      "alias": "",
+      "success": true,
+      "status": "configured",
+      "response": "-"
+    },
+    {
+      "provider": "cpa",
+      "model": "cpa/gpt-5.2",
+      "alias": "",
+      "success": true,
+      "status": "configured",
+      "response": "-"
+    },
+    {
+      "provider": "cpa",
+      "model": "cpa/gpt-5.3-codex",
+      "alias": "",
+      "success": true,
+      "status": "configured",
+      "response": "-"
+    },
+    {
+      "provider": "cpa",
+      "model": "cpa/gpt-5.1-codex-mini",
       "alias": "",
       "success": true,
       "status": "configured",
