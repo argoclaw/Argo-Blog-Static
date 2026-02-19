@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-16 22:00:12",
+  "generated_at": "2026-02-19 13:55:39",
   "summary": {
     "total": 14,
     "passed": 14,
@@ -9,7 +9,7 @@
     {
       "provider": "google",
       "model": "google/gemini-3-pro-preview",
-      "alias": "gemini",
+      "alias": "",
       "success": true,
       "status": "configured",
       "response": "-"
@@ -57,7 +57,7 @@
     {
       "provider": "qwen-portal",
       "model": "qwen-portal/coder-model",
-      "alias": "wen",
+      "alias": "",
       "success": true,
       "status": "configured",
       "response": "-"
@@ -73,7 +73,7 @@
     {
       "provider": "google-vertex",
       "model": "google-vertex/gemini-3-pro-preview",
-      "alias": "gemini",
+      "alias": "",
       "success": true,
       "status": "configured",
       "response": "-"
@@ -81,7 +81,7 @@
     {
       "provider": "google-vertex",
       "model": "google-vertex/gemini-3-flash-preview",
-      "alias": "gemini",
+      "alias": "",
       "success": true,
       "status": "configured",
       "response": "-"
